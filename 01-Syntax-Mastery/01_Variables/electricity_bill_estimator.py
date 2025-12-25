@@ -1,12 +1,17 @@
-# Electricity Bill Estimator
+'''
+Electricity Bill Estimator
+'''
 
+# Read the number of electricity units consumed from the user
 units = float(input('Enter the number of electricity units consumed:'))
+
+# Calculate cost based on consumption slabs
 if units <= 100:
     cost = units * 2.0
-    print('Total Electricity Bill is:', cost)
 elif units <= 300:
     cost = units * 3.0
-    print('Total Electricity Bill is:', cost)
 else:
     cost = units * 5.0
-    print('Total Electricity Bill is:', cost)
+
+# Display the total electricity bill
+print(f'Total Electricity Bill is: {cost}rs')

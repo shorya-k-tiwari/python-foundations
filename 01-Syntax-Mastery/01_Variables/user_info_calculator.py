@@ -1,4 +1,6 @@
-''' User Information and Calculations '''
+''' 
+User Information and Calculations 
+'''
 
 # Read user information from input
 name = input('Enter Your Name:')

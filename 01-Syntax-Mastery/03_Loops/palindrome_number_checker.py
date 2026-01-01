@@ -2,40 +2,33 @@
 Palindrome Number Checker
 '''
 
-#
+# Take integer input from the user
 n = int(input('Enter a Number: '))
 
-#
+# Store the original number for comparison
+original = n
+
+# Variable to store the reversed number
 m = 0
 
-#
-if 0 <= n <= 9:
-    answer = 'Palindrome'
-elif n>9:
-    
-    #
-    original = n 
-    
-    #
-    while n!=0:
-        digit = n%10
-        m = m*10 + digit
-        n = n//10
-
-    # 
-    if m == original:
-        answer = 'Palindrome'
-        print(f'{original} ---> {answer}')
-        exit()
-    else:
-        answer = 'Not a Palindrome'
-        print(f'{original} ---> {answer}')
-        exit()
-elif n<0:
+# Handling -ve numbers
+if n < 0:
     answer = 'Not a Palindrome'
-else:
-    print('Please enter a Numeric Value!')
-    exit()
 
-#
-print(f'{n} ---> {answer}')
+# Zero is a palindrome
+elif n == 0:
+    answer = 'Palindrome'
+
+# Reverse the number and compare
+else:
+    temp = n
+    while temp != 0:
+        digit = temp % 10
+        m = m * 10 + digit
+        temp //= 10
+    
+    # Check if reversed number matches the original
+    answer = 'Palindrome' if m == original else 'Not a Palindrome'
+
+# Display the result
+print(f'{original} ---> {answer}')

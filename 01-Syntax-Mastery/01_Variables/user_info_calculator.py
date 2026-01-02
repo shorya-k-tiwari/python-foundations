@@ -3,9 +3,9 @@ User Information and Calculations
 '''
 
 # Read user information from input
-name = input('Enter Your Name:')
-age = int(input('Enter Your Age (in years):'))
-height = float(input('Enter Your Height (in meters):'))
+name = input('Enter Your Name: ')
+age = int(input('Enter Your Age (in years): '))
+height = float(input('Enter Your Height (in meters): '))
 
 # Compute additional info (months, days, height in cm)
 months = age * 12

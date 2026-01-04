@@ -1,5 +1,8 @@
 ''' 
-Bio Data Script 
+Bio Data Script
+
+Biodata is a document used to provide a structured summary 
+of an individual's personal, educational, and professional details
 '''
 
 # Personal and academic details

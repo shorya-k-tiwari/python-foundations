@@ -1,5 +1,8 @@
 '''
 Multiplication Table Generator
+
+A multiplication table is a mathematical list or grid 
+that shows the results of multiplying one number by a set of others
 '''
 
 # Take the number whose table is to be generated

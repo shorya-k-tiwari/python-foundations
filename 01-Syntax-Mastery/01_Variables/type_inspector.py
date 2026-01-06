@@ -1,5 +1,8 @@
 '''
 Type Inspector 
+
+Type Inspector is a simple script that collects user inputs, 
+converts them to appropriate types, and prints each variable's value and data type
 '''
 
 # Collect user input values

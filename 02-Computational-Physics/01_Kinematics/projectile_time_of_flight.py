@@ -2,7 +2,8 @@
 Time of Flight Calculator
 
 Time of Flight: The total duration (in seconds) that a projectile 
-remains in the air before hitting the target or ground.
+remains in the air before hitting the target or ground
+
 Formula: T = (2 * u * sin(theta)) / g
 '''
 

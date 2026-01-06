@@ -1,5 +1,8 @@
 ''' 
-Program to generate a quadratic equation from the given roots 
+Quadratic Equation Generator
+
+A quadratic equation is a polynomial equation of degree 2,
+in the form ax^2 + bx + c = 0 where a ≠ 0 and a, b, c are constants
 '''
 
 # Taking roots of the quadratic equation as input from the user

@@ -1,5 +1,8 @@
 '''
 Temperature Classifier 
+
+Temperature classifier categorizes temperatures into levels like freezing,
+cold, cool, warm, hot, or extreme using defined thresholds
 '''
 
 # Read temperature in Celsius from the user

@@ -1,5 +1,8 @@
 '''
 Electricity Bill Estimator
+
+Electricity Bill Estimator is program calculating charges 
+from electricity units consumed using tiered slab rates
 '''
 
 # Read the number of electricity units consumed from the user

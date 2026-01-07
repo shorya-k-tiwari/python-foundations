@@ -1,5 +1,7 @@
 '''
 Number Classification Engine
+
+Number Classification Engine determines properties of an input number
 '''
 
 # Input from user

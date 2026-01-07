@@ -1,5 +1,8 @@
 '''
-Grading System Based on Marks and Attendance
+Grading System 
+
+Grading System is a method converting numerical scores 
+into letter grades or categories via predefined ranges
 '''
 
 # Read student's marks (0-100) and attendance percentage (0-100) from the user

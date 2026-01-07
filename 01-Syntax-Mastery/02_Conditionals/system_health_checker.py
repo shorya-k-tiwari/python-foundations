@@ -1,5 +1,8 @@
 ''' 
 System Health Checker
+
+System Health Checker assesses and monitors the status 
+of a system's components for performance, errors, or issues
 '''
 
 # Get user input for CPU usage and available memory

@@ -1,5 +1,8 @@
 ''' 
 Digit to Word Converter
+
+Digit to Word Converter is mapping numbers to spelled-out 
+English words via place-value grouping and lookup tables
 '''
 
 # Get a digit input from the user

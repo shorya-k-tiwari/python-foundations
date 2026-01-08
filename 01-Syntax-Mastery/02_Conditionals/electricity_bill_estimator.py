@@ -1,14 +1,10 @@
-'''
+"""
 Electricity Bill Estimator
+Calculates total cost based on simplified slab-wise unit rates
+"""
 
-Electricity Bill Estimator is program calculating charges 
-from electricity units consumed using tiered slab rates
-'''
+units = float(input("Enter the number of electricity units consumed: "))
 
-# Read the number of electricity units consumed from the user
-units = float(input('Enter the number of electricity units consumed:'))
-
-# Calculate cost based on consumption slabs
 if units <= 100:
     cost = units * 2.0
 elif units <= 300:
@@ -16,5 +12,4 @@ elif units <= 300:
 else:
     cost = units * 5.0
 
-# Display the total electricity bill
-print(f'Total Electricity Bill is: {cost}rs')
+print(f"Total electricity bill: ₹{cost}")

@@ -1,6 +1,6 @@
 """
 Student Result Calculator
-Accepts subject-wise marks and computes total, average, and percentage.
+Accepts subject-wise marks and computes total, average, and percentage
 """
 
 physics = int(input("Enter your marks in Physics (0-100): "))

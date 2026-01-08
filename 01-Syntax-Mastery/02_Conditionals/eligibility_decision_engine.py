@@ -2,7 +2,7 @@
 Eligibility Decision Engine
 
 Classifies candidates into outcome tiers (Eligible / Waitlisted / Rejected)
-based on academic scores, age, experience, and discipline.
+based on academic scores, age, experience, and discipline
 """
 
 age = int(input("Enter your age: "))

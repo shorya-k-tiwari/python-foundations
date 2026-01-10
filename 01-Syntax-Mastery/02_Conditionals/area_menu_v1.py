@@ -1,6 +1,6 @@
 """
 Area Calculation Menu
-Computes the area of basic geometric shapes based on user selection.
+Computes the area of basic geometric shapes based on user selection
 """
 
 import math
@@ -36,7 +36,7 @@ elif choice == "4":
     shape = "Circle"
 
 else:
-    print("Invalid choice. Please select a valid option.")
+    print("Invalid choice. Please select a valid option")
     area = None
 
 if area is not None:

@@ -1,5 +1,6 @@
 """
 Electricity Bill Estimator
+
 Calculates total cost based on simplified slab-wise unit rates
 """
 

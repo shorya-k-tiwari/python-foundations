@@ -1,6 +1,7 @@
 """
 Digit to Word Converter
-Converts a single digit (0–9) into its English word representation
+
+Converts a single digit (0-9) into its English word representation
 """
 
 n = int(input("Enter a digit (0-9): "))

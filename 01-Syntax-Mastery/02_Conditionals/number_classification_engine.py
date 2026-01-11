@@ -2,7 +2,7 @@
 Number Classification Engine
 
 Determines the sign, parity, and divisibility
-properties of an input integer.
+properties of an input integer
 """
 
 n = int(input("Enter a number: "))

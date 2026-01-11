@@ -1,7 +1,7 @@
 """
 System Health Checker
 
-Evaluates system status based on CPU usage and available memory.
+Evaluates system status based on CPU usage and available memory
 """
 
 cpu = int(input("Enter CPU usage percentage (0-100): "))

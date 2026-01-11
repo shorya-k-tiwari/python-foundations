@@ -1,17 +1,15 @@
-'''
+"""
 Voting Eligibility Analyzer
 
-Voting eligibility is whether a person can legally vote based on their age (must be 18 or older)
-'''
+Determines voting eligibility based on age
+"""
 
-# Get user input for age
 age = int(input("Enter your age: "))
 
-# Determine voting eligibility based on age
-if age >= 18:
-    print("You are eligible to vote")
-elif age > 0:
-    year = 18 - age
-    print(f"You are not eligible. You can vote after {year} year(s)")
-else:
+if age < 0:
     print("Invalid age entered")
+elif age >= 18:
+    print("You are eligible to vote")
+else:
+    years_left = 18 - age
+    print(f"You are not eligible. You can vote after {years_left} year(s)")

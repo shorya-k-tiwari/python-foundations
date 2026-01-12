@@ -1,38 +1,22 @@
-'''
+"""
 Palindrome Number Checker
 
-A palindrome number is a positive integer 
-that reads the same forwards and backwards in 
-its decimal representation
-'''
+Checks whether an integer reads the same forwards and backwards
+"""
 
-# Take integer input from the user
-n = int(input('Enter a Number: '))
-
-# Store the original number for comparison
+n = int(input("Enter a number: "))
 original = n
+reversed_num = 0
 
-# Variable to store the reversed number
-m = 0
-
-# Handling -ve numbers
 if n < 0:
-    answer = 'Not a Palindrome'
-
-# Zero is a palindrome
+    result = "Not a Palindrome"
 elif n == 0:
-    answer = 'Palindrome'
-
-# Reverse the number and compare
+    result = "Palindrome"
 else:
-    temp = n
-    while temp != 0:
-        digit = temp % 10
-        m = m * 10 + digit
-        temp //= 10
-    
-    # Check if reversed number matches the original
-    answer = 'Palindrome' if m == original else 'Not a Palindrome'
+    while n > 0:
+        reversed_num = reversed_num * 10 + n % 10
+        n //= 10
 
-# Display the result
-print(f'{original} ---> {answer}')
+    result = "Palindrome" if reversed_num == original else "Not a Palindrome"
+
+print(f"{original} ---> {result}")

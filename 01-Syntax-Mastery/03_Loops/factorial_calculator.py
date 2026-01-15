@@ -1,23 +1,18 @@
-'''
+"""
 Factorial Calculator
 
-A factorial is the product of all positive integers 
-from 1 up to a given non negative integer n
-'''
+Computes the factorial of a non-negative integer.
+"""
 
-# Get user input
 n = int(input("Enter a non-negative integer: "))
 
-# Calculate factorial using iterative approach
-if n > 0:
-    factorial = 1
-    for i in range(1, n + 1):
-        factorial *= i 
-elif n == 0:
-    factorial = 1
-else: 
+if n < 0:
     print("Factorial is not defined for negative numbers")
     exit()
 
-# Display the result
-print(f"The factorial of {n}! is: {factorial}")
+factorial = 1
+
+for i in range(1, n + 1):
+    factorial *= i
+
+print(f"The factorial of {n}! is {factorial}")

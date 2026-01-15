@@ -1,46 +1,30 @@
-'''
+"""
 Armstrong Number Checker
 
-An Armstrong number is a number that is 
-equal to the sum of its own digits, each raised 
-to the power of the total number of digits
-'''
+Checks whether a number equals the sum of its digits
+raised to the power of the number of digits
+"""
 
-# Take integer input from the user
-n = int(input('Enter a Number: '))
+n = int(input("Enter a number: "))
 
-# Variable to store the sum of powered digits
-total = 0
-
-# Negative numbers cannot be Armstrong numbers
 if n < 0:
-    answer = 'Not an Armstrong Number'
-
-# Zero is considered an Armstrong number
+    result = "Not an Armstrong Number"
 elif n == 0:
-    answer = 'Armstrong Number'
-
+    result = "Armstrong Number"
 else:
-    
-    # Count the number of digits in the number
-    count = 0
+    digits = 0
     temp = n
-    while temp != 0:
-        count += 1
-        temp //= 10
-    
-    # Calculate the Armstrong sum using the digit count
-    original = n
-    while original != 0:
-        digit = original % 10
-        total = total + digit ** count
-        original //= 10 
-    
-    # Compare calculated sum with the original number
-    if n == total:
-        answer = 'Armstrong Number'
-    else:
-        answer = 'Not an Armstrong Number'
+    armstrong_sum = 0
 
-# Display the result
-print(f'{n} ---> {answer}')
+    while temp > 0:
+        digits += 1
+        temp //= 10
+
+    temp = n
+    while temp > 0:
+        armstrong_sum += (temp % 10) ** digits
+        temp //= 10
+
+    result = "Armstrong Number" if armstrong_sum == n else "Not an Armstrong Number"
+
+print(f"{n} ---> {result}")

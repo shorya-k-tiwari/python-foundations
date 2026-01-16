@@ -1,29 +1,29 @@
-'''
+"""
 Digit Analysis Engine
-'''
 
-# Input: Read a positive integer from the user
-n=int(input("Enter a positive integer: "))
+Analyzes the digits of a positive integer to compute
+their sum, product, and parity of the sum
+"""
 
-# Initialize variables to accumulate sum and product of digits
-sum = 0
-product = 1
+n = int(input("Enter a positive integer: "))
 
-# Process each digit of the number
-while n>0:
-    digit = n % 10
-    sum += digit
-    product *= digit
-    n //=10
+if n <= 0:
+    print("Invalid input")
+    exit()
 
-# Determine the parity of the sum
-if sum%2==0:
-    parity = "Even"
-else:
-    parity = "Odd"
+digit_sum = 0
+digit_product = 1
+temp = n
 
-# Output the results
-print('Output:-')
-print(f"Sum of digits: {sum}")
-print(f"Product of digits: {product}")
+while temp > 0:
+    digit = temp % 10
+    digit_sum += digit
+    digit_product *= digit
+    temp //= 10
+
+parity = "Even" if digit_sum % 2 == 0 else "Odd"
+
+print("Output:")
+print(f"Sum of digits: {digit_sum}")
+print(f"Product of digits: {digit_product}")
 print(f"Parity of sum: {parity}")

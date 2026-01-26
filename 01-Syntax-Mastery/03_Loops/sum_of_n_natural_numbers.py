@@ -10,3 +10,5 @@ else:
     sum = 0
     for i in range(1, 1 + n):
         sum += i
+
+    print(f'The sum of first {n} natural numbers is: {sum}')

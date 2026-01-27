@@ -1,7 +1,7 @@
 """
 Sum of n Natural Numbers
 
-Computes the sum of the first n natural numbers using iteration.
+Computes the sum of the first n natural numbers using iteration
 """
 
 n = int(input("Enter a positive integer: "))

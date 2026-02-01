@@ -28,7 +28,7 @@ def check_role(role):
         return "Read-Only Access"
     return "Invalid Role"
 
-def access_controller(role, attempts, verified):
+def access(role, attempts, verified):
 
     result = check_attempts(attempts)
     if result:
@@ -38,5 +38,5 @@ def access_controller(role, attempts, verified):
         return result
     return check_role(role)
 
-final = access_controller(role, attempts, verified)
+final = access(role, attempts, verified)
 print(f"System Response: {final}")

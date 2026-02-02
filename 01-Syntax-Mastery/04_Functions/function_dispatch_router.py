@@ -31,5 +31,6 @@ def route_command(cmd):
         return
     action()
 
+help_menu()
 cmd = input("Enter command: ").strip().lower()
 route_command(cmd)

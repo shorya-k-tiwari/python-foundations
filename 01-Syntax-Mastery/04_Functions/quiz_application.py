@@ -1,5 +1,8 @@
 """
 Quiz Application
+
+Loads questions from a dictionary,
+checks answers, and displays final score
 """
 
 questions = {

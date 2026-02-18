@@ -18,3 +18,17 @@ def display_word(secret, guessed_letters):
         else:
             display += "_ "
     return display.strip()
+
+def is_word_guessed(secret, guessed_letters):
+    for ch in secret:
+        if ch not in guessed_letters:
+            return False
+    return True
+
+
+def run_game():
+    secret = pick_word()
+    guessed_letters = set()
+    attempts = 6
+
+    print("=== Hangman Game ===")

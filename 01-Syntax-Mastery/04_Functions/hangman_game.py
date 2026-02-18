@@ -32,3 +32,37 @@ def run_game():
     attempts = 6
 
     print("=== Hangman Game ===")
+
+    while attempts > 0:
+        print("\nWord:", display_word(secret, guessed_letters))
+        print("Attempts left:", attempts)
+
+        guess = input("Guess a letter: ").lower()
+
+        if len(guess) != 1 or not guess.isalpha():
+            print("Enter a single alphabet letter")
+            continue
+
+        if guess in guessed_letters:
+            print("Already guessed")
+            continue
+
+        guessed_letters.add(guess)
+
+        if guess not in secret:
+            attempts -= 1
+            print("Wrong guess!")
+
+        if is_word_guessed(secret, guessed_letters):
+            print("\nCongratulations! You guessed the word:", secret)
+            return
+
+    print("\nGame Over! The word was:", secret)
+
+
+def main():
+    run_game()
+
+    
+if __name__ == "__main__":
+    main()

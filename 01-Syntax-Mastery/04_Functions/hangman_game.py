@@ -1,5 +1,6 @@
 """
 Hangman Game
+
 Player guesses letters to reveal the hidden word
 """
 
@@ -24,7 +25,6 @@ def is_word_guessed(secret, guessed_letters):
         if ch not in guessed_letters:
             return False
     return True
-
 
 def run_game():
     secret = pick_word()
@@ -59,10 +59,8 @@ def run_game():
 
     print("\nGame Over! The word was:", secret)
 
-
 def main():
     run_game()
 
-    
 if __name__ == "__main__":
     main()

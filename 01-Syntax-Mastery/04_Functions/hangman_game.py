@@ -1,7 +1,5 @@
 """
-Hangman Game
-
-Player guesses letters to reveal the hidden word
+Simple hangman game where you guess letters to reveal a word
 """
 
 import random
@@ -31,33 +29,33 @@ def run_game():
     guessed_letters = set()
     attempts = 6
 
-    print("=== Hangman Game ===")
+    print("=== Hangman ===")
 
     while attempts > 0:
         print("\nWord:", display_word(secret, guessed_letters))
         print("Attempts left:", attempts)
 
-        guess = input("Guess a letter: ").lower()
+        guess = input("Type one letter: ").lower()
 
         if len(guess) != 1 or not guess.isalpha():
-            print("Enter a single alphabet letter")
+            print("Please enter one letter (a-z)")
             continue
 
         if guess in guessed_letters:
-            print("Already guessed")
+            print("You already tried that one")
             continue
 
         guessed_letters.add(guess)
 
         if guess not in secret:
             attempts -= 1
-            print("Wrong guess!")
+            print("Nope, that letter is not in the word")
 
         if is_word_guessed(secret, guessed_letters):
-            print("\nCongratulations! You guessed the word:", secret)
+            print("\nNice! You got the word:", secret)
             return
 
-    print("\nGame Over! The word was:", secret)
+    print("\nOut of tries. The word was:", secret)
 
 def main():
     run_game()

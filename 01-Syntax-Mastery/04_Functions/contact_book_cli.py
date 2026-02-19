@@ -1,46 +1,42 @@
 """
-Contact Book CLI
+Simple contact book 
+
 Simple command-line contact manager using functions and dictionary storage
 """
 
 contacts = {}
 
-
 def add_contact():
-    name = input("Enter name: ").strip()
-    phone = input("Enter phone number: ").strip()
-    
+    name = input("Name: ").strip()
+    phone = input("Phone number: ").strip()    
     if name in contacts:
-        print("Contact already exists. Updating number.")
+        print("That contact already exists, updating the number")
     contacts[name] = phone
-    print("Contact saved.")
-
+    print("Saved")
 
 def search_contact():
-    name = input("Enter name to search: ").strip()
+    name = input("Search name: ").strip()
     if name in contacts:
         print(f"{name} -> {contacts[name]}")
     else:
-        print("Contact not found.")
-
+        print("Couldn't find that contact")
 
 def delete_contact():
-    name = input("Enter name to delete: ").strip()
+    name = input("Delete name: ").strip()
     if name in contacts:
         del contacts[name]
-        print("Contact deleted.")
+        print("Deleted")
     else:
-        print("Contact not found.")
+        print("Couldn't find that contact")
 
 def list_contacts():
     if not contacts:
-        print("No contacts saved.")
+        print("No contacts yet")
         return
 
-    print("\nAll Contacts:")
+    print("\nContacts:")
     for name, phone in contacts.items():
         print(f"{name} -> {phone}")
-
 
 def menu():
     while True:
@@ -52,7 +48,7 @@ def menu():
 5. Exit
 """)
 
-        choice = input("Choose option: ").strip()
+        choice = input("Pick an option: ").strip()
 
         if choice == "1":
             add_contact()
@@ -63,10 +59,10 @@ def menu():
         elif choice == "4":
             list_contacts()
         elif choice == "5":
-            print("Exiting Contact Book.")
+            print("Closing contact book")
             break
         else:
-            print("Invalid option.")
+            print("That option is not valid")
 
 if __name__ == "__main__":
     menu()

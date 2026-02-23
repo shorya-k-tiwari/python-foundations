@@ -49,7 +49,7 @@ def calculator():
         choice = input("\nEnter choice: ")
         
         if choice == '7':
-            print("bye!")
+            print("See you again!")
             break
         
         if choice in ['1', '2', '3', '4', '5']:

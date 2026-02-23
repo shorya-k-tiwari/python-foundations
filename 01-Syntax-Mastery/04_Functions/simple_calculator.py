@@ -3,6 +3,7 @@ Simple Calculator
 
 This program performs basic arithmetic operations
 '''
+
 def add(a, b):
     return a + b
 
@@ -19,7 +20,6 @@ def divide(a, b):
         return a / b
 
 def power(a, b):
-    # calculates a raised to power b
     result = 1
     for i in range(b):
         result = result * a
@@ -33,7 +33,6 @@ def factorial(n):
         result = result * i
     return result
 
-# main menu
 def show_menu():
     print("\n--- Calculator ---")
     print("1. Add")

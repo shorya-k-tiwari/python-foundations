@@ -3,7 +3,7 @@ Simple contact book
 
 Simple command-line contact manager using functions and dictionary storage
 """
- 
+
 contacts = {}
 
 def add_contact():

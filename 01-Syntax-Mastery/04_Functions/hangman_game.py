@@ -1,4 +1,6 @@
 """
+Hangman Game
+
 Simple hangman game where you guess letters to reveal a word
 """
 
